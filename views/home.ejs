@@ -1,10 +1,11 @@
-<%- include("header") -%>
-
+<%- include("partials/header"); -%>
+<h1>Home</h1>
+<p>Hey there in this page you can serch for a specific movie of your choice.
+    <br> You only need to write the exact name of the movie below.
+    <br>So go on and we hope you will enjoy your experience with our Appliction! </p>
 <form action="/" method="POST">
     <label for="movieName">Movie Name:</label>
-    <input type="text" name="movieName" />
+    <input type="text" name="movieName" autocomplete="off" placeholder="" />
     <button type="submit">Go</button>
 </form>
-
-
-<%- include("footer") -%>
+<%- include("partials/footer"); -%>
